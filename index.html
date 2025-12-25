@@ -202,22 +202,22 @@
         </div>
     </footer>
 
-    <script>
-        // REPLACE THIS WITH YOUR GOOGLE FORM URL
-        const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfUr9B_rvV7Ry8iDfeGjxDgyK8RwlazD5qwhAWAKGrXLG5e5w/viewform?usp=dialog';
-        
-        function openGoogleForm() {
-            if (GOOGLE_FORM_URL === 'https://docs.google.com/forms/d/e/1FAIpQLSfUr9B_rvV7Ry8iDfeGjxDgyK8RwlazD5qwhAWAKGrXLG5e5w/viewform?usp=dialog') {
-                alert('Please add your Google Form link in the code!');
-                return;
-            }
-            window.open(GOOGLE_FORM_URL, '_blank');
-        }
-        
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
+<script>
+    // Google Form URL
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfUr9B_rvV7Ry8iDfeGjxDgyK8RwlazD5qwhAWAKGrXLG5e5w/viewform?usp=dialog';
+    
+    function openGoogleForm() {
+        window.open(GOOGLE_FORM_URL, '_blank');
+    }
+    
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+</script>
+
 </body>
 
 </html>
+
