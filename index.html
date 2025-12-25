@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Quiz Competition - kittcha</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #9333ea, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-100 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="kittcha Logo" class="h-10 sm:h-12 w-auto rounded-lg">
+                <span class="text-xl sm:text-2xl font-bold text-gray-900">kittcha</span>
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">About</a>
+                <a href="#details" class="text-gray-700 hover:text-purple-600 font-medium">Details</a>
+                <a href="#register" class="text-gray-700 hover:text-purple-600 font-medium">Register</a>
+            </nav>
+            <button onclick="openGoogleForm()" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-md font-medium">
+                Register Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-28 pb-16 px-4 sm:px-6 bg-gradient-to-b from-purple-50 to-white">
+        <div class="container mx-auto max-w-6xl text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full text-purple-700 font-medium">
+                <i class="fas fa-brain"></i> Social Science Organization
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900">
+                Psychology Quiz<br>
+                <span class="gradient-text">Competition</span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+                Test your knowledge of the human mind and behavior
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button onclick="openGoogleForm()" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-md text-lg font-medium shadow-lg">
+                    Register for Free
+                </button>
+                <button onclick="scrollToSection('details')" class="border-2 border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-4 rounded-md text-lg font-medium">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-16 px-4 sm:px-6 bg-white">
+        <div class="container mx-auto max-w-6xl grid md:grid-cols-3 gap-8">
+            <div class="rounded-xl border-2 border-purple-200 bg-white shadow p-6 text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="far fa-calendar-alt text-3xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">29 December</h3>
+                <p class="text-gray-600">Mark your calendar</p>
+            </div>
+            <div class="rounded-xl border-2 border-purple-200 bg-white shadow p-6 text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="far fa-clock text-3xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">9:00 PM</h3>
+                <p class="text-gray-600">Evening competition</p>
+            </div>
+            <div class="rounded-xl border-2 border-purple-200 bg-white shadow p-6 text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-globe text-3xl text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Online Event</h3>
+                <p class="text-gray-600">Join from anywhere</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 bg-purple-50">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">About kittcha</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        kittcha is a dynamic social science organization dedicated to fostering intellectual curiosity and academic excellence.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        We create engaging platforms for students and enthusiasts to explore various disciplines within the social sciences.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white border-2 border-purple-200 rounded-xl shadow p-6">
+                        <i class="fas fa-brain text-4xl text-purple-600 mb-2 block"></i>
+                        <h4 class="font-bold text-gray-900 mb-1">Mind & Behavior</h4>
+                    </div>
+                    <div class="bg-white border-2 border-purple-200 rounded-xl shadow p-6">
+                        <i class="fas fa-users text-4xl text-purple-600 mb-2 block"></i>
+                        <h4 class="font-bold text-gray-900 mb-1">Open to All</h4>
+                    </div>
+                    <div class="bg-white border-2 border-purple-200 rounded-xl shadow p-6">
+                        <i class="fas fa-comments text-4xl text-purple-600 mb-2 block"></i>
+                        <h4 class="font-bold text-gray-900 mb-1">Interactive</h4>
+                    </div>
+                    <div class="bg-white border-2 border-purple-200 rounded-xl shadow p-6">
+                        <i class="fas fa-laptop-house text-4xl text-purple-600 mb-2 block"></i>
+                        <h4 class="font-bold text-gray-900 mb-1">Virtual</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="py-20 px-4 sm:px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center space-y-4 mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Event Details</h2>
+                <p class="text-xl text-gray-600">Everything you need to know</p>
+            </div>
+            <div class="space-y-6">
+                <div class="border-2 border-purple-200 rounded-xl shadow p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">📅 Date & Time</h3>
+                    <p class="text-gray-700">29th December 2025 at 9:00 PM</p>
+                </div>
+                <div class="border-2 border-purple-200 rounded-xl shadow p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">🌐 Mode</h3>
+                    <p class="text-gray-700">Online - Join from anywhere</p>
+                </div>
+                <div class="border-2 border-purple-200 rounded-xl shadow p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">🧠 Topic</h3>
+                    <p class="text-gray-700">Psychology - Human behavior and mental processes</p>
+                </div>
+                <div class="border-2 border-purple-200 rounded-xl shadow p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">👥 Participation</h3>
+                    <p class="text-gray-700">Free and open to all</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 px-4 sm:px-6 bg-gradient-to-b from-purple-50 to-purple-100">
+        <div class="container mx-auto max-w-4xl text-center space-y-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Ready to Challenge Yourself?</h2>
+            <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                Register now and test your psychology knowledge
+            </p>
+            <button onclick="openGoogleForm()" class="bg-purple-600 hover:bg-purple-700 text-white px-12 py-4 rounded-md text-lg font-medium shadow-xl">
+                <i class="fas fa-file-alt mr-2"></i>Register via Google Form
+            </button>
+            <p class="text-sm text-gray-600">Registration closes on 28th December</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="logo.png" alt="kittcha Logo" class="h-16 w-auto rounded-lg">
+                        <span class="text-2xl font-bold">kittcha</span>
+                    </div>
+                    <p class="text-gray-400">A social science organization</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#about" class="block text-gray-400 hover:text-purple-400">About</a>
+                        <a href="#details" class="block text-gray-400 hover:text-purple-400">Details</a>
+                        <a href="#register" class="block text-gray-400 hover:text-purple-400">Register</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Event Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="far fa-calendar-alt mr-2"></i>Date: 29 December 2025</p>
+                        <p><i class="far fa-clock mr-2"></i>Time: 9:00 PM</p>
+                        <p><i class="fas fa-globe mr-2"></i>Mode: Online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 kittcha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // REPLACE THIS WITH YOUR GOOGLE FORM URL
+        const GOOGLE_FORM_URL = 'YOUR_GOOGLE_FORM_LINK_HERE';
+        
+        function openGoogleForm() {
+            if (GOOGLE_FORM_URL === 'YOUR_GOOGLE_FORM_LINK_HERE') {
+                alert('Please add your Google Form link in the code!');
+                return;
+            }
+            window.open(GOOGLE_FORM_URL, '_blank');
+        }
+        
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
